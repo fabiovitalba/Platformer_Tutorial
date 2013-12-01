@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{98AAB336-CF9F-8666-C3E3-3C851B1B88B4}</ProjectGuid>
+	<ProjectGuid>{909562D2-E008-0E02-79CB-FCA9485E9C9A}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -63,12 +63,13 @@
      <Compile Include="Assets\Scripts\Effects\Foot.cs" />
      <Compile Include="Assets\Scripts\Effects\SpecialEffectHandler.cs" />
      <Compile Include="Assets\Scripts\Effects\StopEmittingAfterDelay.cs" />
+     <Compile Include="Assets\Scripts\Effects\collectibleFloat.cs" />
      <None Include="Assets\Shaders\Particle Add (Overlay).shader" />
      <None Include="Assets\Gem Shader\diamond shader.shader" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass-vs.csproj">
-      <Project>{B955D026-CDEC-935A-24D7-7658BDE35539}</Project>      <Name>Assembly-CSharp-firstpass-vs</Name>    </ProjectReference>
+      <Project>{5F1302EA-DB03-76ED-376E-8365563811B2}</Project>      <Name>Assembly-CSharp-firstpass-vs</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
