@@ -1,0 +1,59 @@
+-debug
+-target:library
+-nowarn:0169
+-out:Temp/Assembly-CSharp.dll
+-r:"C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll"
+-r:Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll
+-r:"C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll"
+-define:UNITY_STANDALONE_OSX
+-define:ENABLE_MICROPHONE
+-define:ENABLE_TEXTUREID_MAP
+-define:ENABLE_AUDIO_FMOD
+-define:UNITY_STANDALONE
+-define:ENABLE_MONO
+-define:ENABLE_TERRAIN
+-define:ENABLE_SUBSTANCE
+-define:ENABLE_GENERICS
+-define:ENABLE_MOVIES
+-define:ENABLE_WWW
+-define:ENABLE_IMAGEEFFECTS
+-define:ENABLE_WEBCAM
+-define:RENDER_SOFTWARE_CURSOR
+-define:ENABLE_NETWORK
+-define:ENABLE_PHYSICS
+-define:ENABLE_CACHING
+-define:ENABLE_CLOTH
+-define:ENABLE_GAMECENTER
+-define:ENABLE_SHADOWS
+-define:ENABLE_AUDIO
+-define:ENABLE_DUCK_TYPING
+-define:ENABLE_SINGLE_INSTANCE_BUILD_SETTING
+-define:UNITY_4_2_2
+-define:UNITY_4_2
+-define:ENABLE_PROFILER
+-define:UNITY_EDITOR
+-define:UNITY_EDITOR_WIN
+-define:UNITY_TEAM_LICENSE
+"Assets/Gem Shader/Example/GemSpawner.cs"
+Assets/Scripts/2D/Camera/CameraFocus.cs
+Assets/Scripts/2D/Camera/CameraScrolling.cs
+Assets/Scripts/2D/Camera/CameraTargetAttributes.cs
+"Assets/Scripts/2D/Character Controls/ChangeCharacter.cs"
+"Assets/Scripts/2D/Character Controls/PlatformerController.cs"
+"Assets/Scripts/2D/Character Controls/PlatformerPlayerAnimation.cs"
+"Assets/Scripts/2D/Character Controls/PlatformerPushBodies.cs"
+Assets/Scripts/2D/DeathTrigger.cs
+Assets/Scripts/2D/LevelAttributes.cs
+"Assets/Scripts/2D/Moving Platform/MovingPlatformEffects.cs"
+"Assets/Scripts/2D/Moving Platform/PlatformMover.cs"
+Assets/Scripts/2D/PlatformTarget.cs
+Assets/Scripts/2D/Spaceship/Spaceship.cs
+Assets/Scripts/2D/SpawnPoint.cs
+Assets/Scripts/Effects/CollisionParticleEffect.cs
+Assets/Scripts/Effects/CollisionSoundEffect.cs
+Assets/Scripts/Effects/Foot.cs
+Assets/Scripts/Effects/SpecialEffectHandler.cs
+Assets/Scripts/Effects/StopEmittingAfterDelay.cs
+Assets/Scripts/Effects/collectibleFloat.cs
+-r:"C:/Program Files (x86)/Unity/Editor/Data/Mono\lib/mono/unity\System.Runtime.Serialization.dll"
+-r:"C:/Program Files (x86)/Unity/Editor/Data/Mono\lib/mono/unity\System.Xml.Linq.dll"

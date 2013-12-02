@@ -48,6 +48,7 @@
      <Compile Include="Assets\Scripts\2D\Camera\CameraFocus.cs" />
      <Compile Include="Assets\Scripts\2D\Camera\CameraScrolling.cs" />
      <Compile Include="Assets\Scripts\2D\Camera\CameraTargetAttributes.cs" />
+     <Compile Include="Assets\Scripts\2D\Camera\ChangeCharacter.cs" />
      <Compile Include="Assets\Scripts\2D\Character Controls\PlatformerController.cs" />
      <Compile Include="Assets\Scripts\2D\Character Controls\PlatformerPlayerAnimation.cs" />
      <Compile Include="Assets\Scripts\2D\Character Controls\PlatformerPushBodies.cs" />

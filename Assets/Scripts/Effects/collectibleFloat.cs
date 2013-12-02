@@ -20,9 +20,9 @@ public class collectibleFloat : MonoBehaviour {
 
     void OnTriggerEnter(Collider otherObject)
     {
-        //if (otherObject.tag == "Lerpz")
+        if (otherObject.tag == "Player")
         {
-            Debug.Log("This Object collided: " + otherObject.tag);
+            //Debug.Log("This Object collided: " + otherObject.tag);
             Destroy(gameObject);
         }
     }
