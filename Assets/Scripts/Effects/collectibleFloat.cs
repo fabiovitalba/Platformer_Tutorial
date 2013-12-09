@@ -5,6 +5,7 @@ public class collectibleFloat : MonoBehaviour {
 
     public float rotationSpeed;
     public GameObject collectiblePrefab;
+    public int value;
 
 	// Use this for initialization
 	void Start () {
@@ -22,7 +23,8 @@ public class collectibleFloat : MonoBehaviour {
     {
         if (otherObject.tag == "Player")
         {
-            //Debug.Log("This Object collided: " + otherObject.tag);
+            GameData.Instance.Score += value;
+            Debug.Log("Score: " + GameData.Instance.Score);
             Destroy(gameObject);
         }
     }

@@ -49,10 +49,13 @@
      <Compile Include="Assets\Scripts\2D\Camera\CameraScrolling.cs" />
      <Compile Include="Assets\Scripts\2D\Camera\CameraTargetAttributes.cs" />
      <Compile Include="Assets\Scripts\2D\Camera\ChangeCharacter.cs" />
+     <Compile Include="Assets\Scripts\2D\Camera\HUD.cs" />
      <Compile Include="Assets\Scripts\2D\Character Controls\PlatformerController.cs" />
      <Compile Include="Assets\Scripts\2D\Character Controls\PlatformerPlayerAnimation.cs" />
      <Compile Include="Assets\Scripts\2D\Character Controls\PlatformerPushBodies.cs" />
      <Compile Include="Assets\Scripts\2D\DeathTrigger.cs" />
+     <Compile Include="Assets\Scripts\2D\Enemy\Enemy.cs" />
+     <Compile Include="Assets\Scripts\2D\GameScripts\GameData.cs" />
      <Compile Include="Assets\Scripts\2D\LevelAttributes.cs" />
      <Compile Include="Assets\Scripts\2D\Moving Platform\DroppingPlatformEffect.cs" />
      <Compile Include="Assets\Scripts\2D\Moving Platform\MovingPlatformEffects.cs" />

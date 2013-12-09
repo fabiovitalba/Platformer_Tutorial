@@ -41,14 +41,14 @@ public class CameraFocus : MonoBehaviour
 
     private Rect windowRect = new Rect(20, 20, 250, 50);
     // Make the onscreen GUI to let the player switch control between Lerpz and the spaceship.
-    void OnGUI () {
+    /*void OnGUI () {
 	    // Make a popup window
 	    windowRect = GUILayout.Window (0, windowRect, DoControlsWindow, "Controls");
 	
 	    // The window can be dragged around by the users - make sure that it doesn't go offscreen.
 	    windowRect.x = Mathf.Clamp (windowRect.x, 0.0f, Screen.width - windowRect.width);
 	    windowRect.y = Mathf.Clamp (windowRect.y, 0.0f, Screen.height - windowRect.height);
-    }
+    }*/
 
     // Make the contents of the window
     void DoControlsWindow (int windowID) {

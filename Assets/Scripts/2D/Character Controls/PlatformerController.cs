@@ -10,6 +10,8 @@ public class PlatformerController : MonoBehaviour
     // Does this script currently respond to Input?
     public bool canControl = true;
 
+    private bool enemyJump = false;
+
     // The character will spawn at spawnPoint's position when needed.  This could be changed via a script at runtime to implement, e.g. waypoints/savepoints.
     public Transform spawnPoint;
 
@@ -131,13 +133,17 @@ public class PlatformerController : MonoBehaviour
 
     void Spawn () 
     {
+        //Add Debug for Collider-Deactivation
+        gameObject.SetActive(false);
+
 	    // reset the character's speed
 	    movement.verticalSpeed = 0.0f;
 	    movement.speed = 0.0f;
 	
 	    // reset the character's position to the spawnPoint
 	    transform.position = spawnPoint.position;
-	
+
+        gameObject.SetActive(true);
     }
 
     void OnDeath () {
@@ -222,10 +228,12 @@ public class PlatformerController : MonoBehaviour
 	
 	    if (extraPowerJump)
 		    return;
-	    else if (controller.isGrounded)
+	    else if (controller.isGrounded && !enemyJump)
 		    movement.verticalSpeed = -movement.gravity * Time.deltaTime;
-	    else
-		    movement.verticalSpeed -= movement.gravity * Time.deltaTime;
+        else {
+            movement.verticalSpeed -= movement.gravity * Time.deltaTime;
+            enemyJump = false;
+        }
 		
 	    // Make sure we don't fall any faster than maxFallSpeed.  This gives our character a terminal velocity.
 	    movement.verticalSpeed = Mathf.Max (movement.verticalSpeed, -movement.maxFallSpeed);
@@ -328,6 +336,20 @@ public class PlatformerController : MonoBehaviour
 
     void OnControllerColliderHit (ControllerColliderHit hit )
     {
+        if (hit.gameObject.tag == "Enemy")   {
+            //If hit by the side, you die
+            if (hit.gameObject.GetComponent<Enemy>().invincible)   {
+                OnDeath();  //Die-Function
+            }   else if ((transform.position.y - hit.gameObject.transform.position.y) > (0.4f * hit.gameObject.transform.localScale.y)) {
+                //If the y-Position is higher than the Enemy, then you are jumping on it
+                JumpedOnEnemy(hit.gameObject.GetComponent<Enemy>().bumpSpeed);
+                hit.gameObject.GetComponent<Enemy>().Kill();
+            }   else {
+                OnDeath();
+            }
+            return;
+        }
+
 	    if (hit.moveDirection.y > 0.01) 
 		    return;
 	
@@ -336,6 +358,11 @@ public class PlatformerController : MonoBehaviour
 	    if (hit.moveDirection.y < -0.9 && hit.normal.y > 0.9) {
 		    activePlatform = hit.collider.transform;	
 	    }
+    }
+
+    public void JumpedOnEnemy (float bumpSpeed)  {
+        movement.verticalSpeed = bumpSpeed;
+        enemyJump = true;
     }
 
     // Various helper functions below:
