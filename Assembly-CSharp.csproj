@@ -54,6 +54,7 @@
      <Compile Include="Assets\Scripts\2D\Character Controls\PlatformerPushBodies.cs" />
      <Compile Include="Assets\Scripts\2D\DeathTrigger.cs" />
      <Compile Include="Assets\Scripts\2D\LevelAttributes.cs" />
+     <Compile Include="Assets\Scripts\2D\Moving Platform\DroppingPlatformEffect.cs" />
      <Compile Include="Assets\Scripts\2D\Moving Platform\MovingPlatformEffects.cs" />
      <Compile Include="Assets\Scripts\2D\Moving Platform\PlatformMover.cs" />
      <Compile Include="Assets\Scripts\2D\PlatformTarget.cs" />
