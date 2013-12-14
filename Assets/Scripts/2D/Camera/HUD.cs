@@ -3,7 +3,8 @@ using System.Collections;
 
 public class HUD : MonoBehaviour {
 
-    public GUIStyle MyStyle;
+    public GUIStyle GUIStyle;
+    public Texture texture;
 
 	// Use this for initialization
 	void Start () {
@@ -16,6 +17,6 @@ public class HUD : MonoBehaviour {
 	}
 
     void OnGUI() {
-        GUI.Box(new Rect(10, 10, 100, 40), "Score: " + GameData.Instance.Score, MyStyle);
+        GUI.Box(new Rect(10, 10, 350, 40), "Score: 00000000", GUIStyle);
     }
 }
