@@ -71,6 +71,7 @@
      <Compile Include="Assets\Scripts\Effects\SpecialEffectHandler.cs" />
      <Compile Include="Assets\Scripts\Effects\StopEmittingAfterDelay.cs" />
      <Compile Include="Assets\Scripts\Effects\collectibleFloat.cs" />
+     <Compile Include="Assets\Scripts\Other Scripts\KillParticleSystem.cs" />
      <None Include="Assets\Shaders\Particle Add (Overlay).shader" />
      <None Include="Assets\Gem Shader\diamond shader.shader" />
   </ItemGroup>
