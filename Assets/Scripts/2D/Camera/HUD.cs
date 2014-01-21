@@ -17,7 +17,8 @@ public class HUD : MonoBehaviour {
 	}
 
     void OnGUI() {
-        GUI.Box(new Rect(10, 10, 350, 40), "Score 00000000", GUIStyle);
-        GUI.Box(new Rect(10, 30, 350, 40), "Lives  00", GUIStyle);
+        GUI.DrawTexture(new Rect(10, 10, 300, 100), texture);
+
+        GUI.Box(new Rect(25, 25, 300, 80), "Score 00000000\n" + "Lives  00", GUIStyle);
     }
 }
